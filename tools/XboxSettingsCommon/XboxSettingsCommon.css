@@ -1,0 +1,188 @@
+/* Copyright (c) Microsoft Corporation.  All Rights Reserved. */
+
+/* Button override to add some right spacing */
+button,
+.commonButton,
+button.btn-primary,
+.commonButton.btn-primary {
+    margin-right: 10px;
+}
+
+.flex-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    overflow: auto;
+    background: #f2f2f2;
+}
+
+.wdp-xbox-settings-descriptionText, .wdp-xbox-settings-disabledText {
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.wdp-xbox-settings-descriptionText{
+    min-height: 15px;
+}
+
+.horizontal-group div{
+    display: flex;
+}
+
+.horizontal-group label{
+    margin-top:6px;
+}
+
+.horizontal-group select, input{
+    width: 100%;
+    height:30px;
+    margin-right:0px;
+    margin-bottom: 5px;
+}
+
+.wideInputField {
+    width: 100%;
+}
+
+td{
+    vertical-align:text-top
+}
+
+.flex-container {
+    background: #f2f2f2;
+}
+
+.wdp-xbox-expandcollapsecategories {
+    float: right;
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.horizontal-group input[type="checkbox"] {
+    margin-top: 16px;
+}
+
+.horizontal-group label{
+    width: 100%;
+    text-align: left;
+    margin-right:10px;
+}
+
+.settings-category {
+    margin-top: 1px;
+}
+
+.settings-category:not([data-containsSettings="true"]) {
+    display: none;
+}
+
+.settings-category {
+    min-width: calc(45%);
+    max-width: 800px;
+}
+
+#wdp-xbox-importsettingsdiv {
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+#xbox-vssettings-frame {
+    margin: 15px;
+    margin-left: 45px;
+}
+
+#XboxInformationSection {
+    margin: 15px;
+    margin-left: 45px;
+}
+
+.wdp-xbox-setting {
+    margin: 15px;
+    margin-left: 45px;
+}
+
+.wdp-xbox-setting-header {
+    display: inline-flex;
+    color: #FFFFFF;
+    border-style:solid;
+    border-color:white;
+    border-width:1px;
+    background-color: #107c10;
+    width: calc(100%);
+    margin-bottom: 5px;
+}
+
+.wdp-xbox-setting-header-label {
+    margin-top: 5px;
+}
+
+.wdp-xbox-settings-separator {
+    width: 1px;
+    height: 26px;
+    background: #FFFFFF;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+a.wdp-xbox-settings-collapse {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    color: #EBEBEB;
+    margin: 6px;
+}
+
+.wdp-xbox-settings-minimized {
+    background-color: #535353;
+}
+
+a.wdp-xbox-settings-collapse:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.wdp-xbox-expandcollapsecategories-label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 3px;
+    color: #000000;
+}
+
+a.wdp-xbox-expandcategories-button {
+    color: #000000;
+}
+
+a.wdp-xbox-expandcategories-button::after {
+    font-family: "Segoe MDL2 Assets";
+    font-size: 14px;
+    content: '\E948';
+}
+
+a.wdp-xbox-expandcategories-button:hover {
+    text-decoration: none;
+}
+
+a.wdp-xbox-collapsecategories-button {
+    color: #000000;
+}
+
+a.wdp-xbox-collapsecategories-button::after {
+    font-family: "Segoe MDL2 Assets";
+    font-size: 14px;
+    content: '\E949';
+}
+
+a.wdp-xbox-collapsecategories-button:hover {
+    text-decoration: none;
+}
+
+a.wdp-xbox-settings-collapse::after {
+    font-family: "Segoe MDL2 Assets";
+    font-size: 14px;
+    content: '\E70D';
+}
+.wdp-xbox-settings-minimized a.wdp-xbox-settings-collapse::after {
+    content: '\E76C';
+}

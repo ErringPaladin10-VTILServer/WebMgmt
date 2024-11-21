@@ -1,0 +1,54 @@
+﻿<link rel="Stylesheet" href="tools/XboxHttpMonitor/XboxHttpMonitor.css" />
+
+<div id="httpMonitorRoot" class="httpMonitor-root">
+    <div id="httpMonitorDisabled" class="httpMonitor-state">
+        <p>The HTTP Monitor allows you to view decrypted HTTP and HTTPS traffic from your app or game when it is running on your Xbox One.</p>
+        <p id="httpMonitorDisabledInstructions">You can enable this tool in the Settings tab in Dev Home on your Xbox One.</p>
+        <p><strong>WARNING:</strong> If you enable this tool, we recommend that you secure access to your Xbox One by enabling Xbox Device Portal authentication and setting a secure password.</p>
+    </div>
+    <div id="httpMonitorEnabled" class="hideOnLoad httpMonitor-state">
+        <p id="httpMonitorConnectionStatus" class="hidden warning"></p>
+        <p id="httpMonitorGameCoreWarning" class="hidden warning"></p>
+        <button id="toggleStartStopButton">Stop</button>
+        <button id="clearSessions" class="commonButton" aria-label="Clear sessions">Clear</button>
+        <button id="saveTrace" class="commonButton" aria-label="Save sessions to file">Save to file</button>
+        <div id="gridSpace" class="gridSpace">
+            <span id="sessionsCounter"></span>
+            <div class="httpMonitor-masterdetail">
+                <div id="httpSessionsGrid" class="commonTable displayInlineBlock httpSessionsGrid"></div>
+                <div id="httpSessionsGridSelection" class="httpMonitor-detail">
+                    <div id="httpMonitor-session-noSelection" class="httpMonitor-session-noSelection">
+                        No session is selected
+                    </div>
+                    <div id="httpMonitor-session-selection" class="hideOnLoad httpMonitor-session-selection">
+                        <div class="form-group" id="httpMonitor-session-selection-tabDisplay-formgroup">
+                            <input type="radio" name="tabDisplay" id="httpMonitor-session-selection-tabDisplay-headersOption" checked />
+                            <label for="httpMonitor-session-selection-tabDisplay-headersOption" id="httpMonitor-session-selection-tabDisplay-headers-label" class="httpMonitor-radiolabel">Headers</label>
+                            <input type="radio" name="tabDisplay" id="httpMonitor-session-selection-tabDisplay-bodyOption" />
+                            <label for="httpMonitor-session-selection-tabDisplay-bodyOption" id="httpMonitor-session-selection-tabDisplay-body-label" class="httpMonitor-radiolabel">Body</label>
+                        </div>
+                        <div id="httpMonitor-session-selection-headers" class="httpMonitor-session-selection-headers">
+                            <div id="httpMonitor-session-selection-headers-responseLabel" class="httpMonitor-session-sectionheading">Response Headers</div>
+                            <div id="httpMonitor-session-selection-headers-response">
+                            </div>
+                            <div id="httpMonitor-session-selection-headers-requestLabel" class="httpMonitor-session-sectionheading">Request Headers</div>
+                            <div id="httpMonitor-session-selection-headers-request">
+                            </div>
+                        </div>
+                        <div id="httpMonitor-session-selection-body" class="hideOnLoad httpMonitor-session-selection-body">
+                            <div id="httpMonitor-session-selection-body-responseLabel" class="httpMonitor-session-sectionheading">Response Body</div>
+                            <div id="httpMonitor-session-selection-body-response">
+                            </div>
+                            <div id="httpMonitor-session-selection-body-requestLabel" class="httpMonitor-session-sectionheading">Request Body</div>
+                            <div id="httpMonitor-session-selection-body-request">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="slickgrid/slick.rowselectionmodel.js"></script>
+<script src="tools/XboxHttpMonitor/XboxHttpMonitor.js"></script>

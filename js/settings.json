@@ -1,0 +1,13 @@
+{
+  "DeviceSettings": {
+    "DeviceLabel": "Xbox",
+    "HelpLinkID": "735015",
+    "FeedbackLinkID": "785317",
+    "AdditionalStylesheets": [
+      {
+        "Stylesheet": "common-xbox.css"
+      }
+    ],
+    "NoAppInstallCertificate": true
+  }
+}

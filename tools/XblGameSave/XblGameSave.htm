@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="tools/XblGameSave/XblGameSave.js"></script>
+    <style>
+input[type=radio],
+input.radio {
+  width: auto;
+  margin-left: 0px;
+}
+
+.xblgamesave-inputlabel {
+    user-select: none;
+    font-size: 20px;
+    padding-top: 5px;
+    box-sizing: border-box;    
+}
+.xblgamesave-inputlarge {
+    width: 500px;
+}
+
+.xblgamesave-radiolabel {
+    display: inline-block;
+    user-select: none;
+    font-size: 20px;
+    padding-bottom: 4px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.xblgamesave-radiolabel-checked {
+    display: inline-block;
+    user-select: none;
+    font-size: 20px;
+    padding-bottom: 4px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border-bottom-color:  rgb(16,124,16);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    cursor: pointer;
+}        
+ </style>
+</head>
+
+<body>
+    <div id="XblGameSaveHelpSection">
+        <table>
+            <tr><td>reset</td><td>resets data for specified GameSave Provider</td></tr>
+            <tr><td>import</td><td>imports data from the specified json or xml file to a GameSave Provider</td></tr>
+            <tr><td>export</td><td>exports data from a GameSave Provider to the specified file format</td></tr>
+            <tr><td>delete</td><td>deletes data from a GameSave Provider</td></tr>
+            <tr><td>generate</td><td>generates dummy data and saves to the specified json file</td></tr>
+        </table>
+    </div>
+    <br />
+    <div id="XblGameSaveDataSection" style="padding-bottom: 5px">
+        <div class="xblgamesave-inputlabel">Service Configuration ID (SCID)</div>
+        <input id="XblGameSave-scid" type="text" placeholder="scid / {guid}" class="xblgamesave-inputlarge"/>
+        <div class="xblgamesave-inputlabel">Member Name (MSA)</div>
+        <input id="XblGameSave-msa" type="text" placeholder="user@domain.com" class="xblgamesave-inputlarge"/>
+        <div class="xblgamesave-inputlabel">Package Family Name (PFN)</div>
+        <input id="XblGameSave-pfn" type="text" placeholder="required on PC" class="xblgamesave-inputlarge"/>
+        <div class="xblgamesave-inputlabel">Input File (.json or .xml)</div>
+        <input id="XblGameSave-file" type="file" placeholder="XblGameSave-Data.json"  style="width:500px;"/>
+        <div id="XblGameSave-toggleerauwp-formgroup" hidden=true>
+            <div class="xblgamesave-inputlabel">Save Target</div>
+            <input type="radio" name="eraOrUwp" id="XblGameSave-toggleerauwp-eraoption"/>
+            <label for="XblGameSave-toggleerauwp-eraoption" id="XblGameSave-toggleerauwp-eraoption-label" class="xblgamesave-radiolabel">ERA or Game Core</label>
+            <input type="radio" name="eraOrUwp" id="XblGameSave-toggleerauwp-uwpoption" checked="checked"/>
+            <label for="XblGameSave-toggleerauwp-uwpoption" id="XblGameSave-toggleerauwp-uwpoption-label" class="xblgamesave-radiolabel">UWP</label>
+        </div>
+    </div>
+    <div id="XblGameSaveActionsSection" style="padding-bottom: 15px;">
+        <button id="XblGameSave-resetButton" class="commonButton">Reset</button>
+        <button id="XblGameSave-importButton" class="commonButton">Import</button>
+        <button id="XblGameSave-deleteButton" class="commonButton">Delete</button>
+    </div>
+    <div>
+        <div class="xblgamesave-inputlabel">Output Format</div>
+        <input type="radio" name="xmlOrJson" id="XblGameSave-xmlOrJson-xmloption"/>
+        <label for="XblGameSave-xmlOrJson-xmloption" id="XblGameSave-xmlOrJson-xmloption-label" class="xblgamesave-radiolabel">XML</label>
+        <input type="radio" name="xmlOrJson" id="XblGameSave-xmlOrJson-jsonoption" checked="checked"/>
+        <label for="XblGameSave-xmlOrJson-jsonoption" id="XblGameSave-xmlOrJson-jsonoption-label" class="xblgamesave-radiolabel">JSON</label>
+        <div>
+            <button id="XblGameSave-exportButton" class="commonButton">Export</button>       
+        </div>
+        Generates dummy data based off the SCID / MSA / PFN from above and saves to a file.<br/>
+        <input id="XblGameSave-containerCount" type="text" placeholder="Containers (default 2)"/>
+        <input id="XblGameSave-blobCount" type="text" placeholder="Blobs (default 3)"/>
+        <input id="XblGameSave-blobSize" type="text" placeholder="Blob Size (default 1024)" />
+        <div>NOTE:The byte data is a simple ascending sequence, i.e. a five byte blob would have the bytes 00 01 02 03 04.</div>
+        <button id="XblGameSave-generateButton" class="commonButton">Generate</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="tools/Fiddler/Fiddler.js"></script>
+</head>
+
+<body>
+    <div id="fiddler-proxyenabledwarning" hidden>
+        <label class="warning">
+            A proxy is currently enabled on this device.
+        </label>
+    </div>
+    <div id="FiddlerHelpSection">
+        Click <a href="https://go.microsoft.com/fwlink/?linkid=831105" target="_blank" rel="noreferrer">here</a> for help with configuring Fiddler on your dev PC.
+    </div>
+    <br />
+    <div id="FiddlerCertSection">
+        FiddlerRoot.cer - Root certificate file exported from Fiddler (optional after first run).<p />
+        <input type="file" id="certificateFile" class="wideInputField" accept=".cer">
+        <p />
+    </div>
+
+    <div id="ProxyAddressSection">
+        Host IP address or hostname of the development PC running Fiddler<br />
+        <input id="fiddler-proxyAddress" type="text" placeholder="Ip Addess or Hostname" />
+        <p />
+    </div>
+
+    <div id="ProxyPortSection">
+        Fiddler port<br />
+        <input id="fiddler-proxyPort" type="text" value="8888" />
+    </div>
+
+    <div id="enableFiddlerSection">
+        <button id="fiddler-enablefiddlerbutton" class="commonButton" disabled>Enable</button>
+        <button id="fiddler-disablefiddlerbutton" class="commonButton" disabled>Disable</button>
+    </div>
+</body>
+
+</html>

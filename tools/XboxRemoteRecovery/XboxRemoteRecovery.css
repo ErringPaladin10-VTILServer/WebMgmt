@@ -1,0 +1,25 @@
+﻿#xboxremoterecovery-networkshare {
+    width: 500px;
+}
+
+.xboxremoterecovery-updateos {
+    top: calc(50% - 250px);
+    width: 525px;
+}
+
+#xboxremoterecovery-sandbox {
+    width: 100px;
+}
+
+#xboxremoterecovery-update-explanation {
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.xboxremoterecovery-getnetworkcreds {
+    top: calc(50% - 130px);
+}
+
+#xboxremoterecovery-systemupdategroup-setting {
+    width: 525px;
+}

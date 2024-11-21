@@ -1,0 +1,165 @@
+﻿.wdp-xbox-launcher .slick-cell.launcherFieldActions {
+    padding-top: 2px;
+    height: auto;
+}
+
+.wdp-xbox-launcher .slick-cell.tableTextColumn {
+    font-size: 12px;
+}
+
+.wdp-xbox-launcher .launcherFieldActions select.wdp-xbox-launcher-actiondropdown {
+    margin: 0;
+    min-width: 136px;
+}
+
+.wdp-xbox-launcher-details {
+    top: calc(50% - 216px);
+    min-width: 800px;
+}
+
+.xboxdeployment-deploynewapp {
+    top: calc(50% - 350px);
+    width: 650px;
+}
+
+.xboxdeployment-getdependencies {
+    top: calc(50% - 170px);
+}
+
+.xboxdeployment-getnetworkcreds {
+    top: calc(50% - 130px);
+}
+
+.xboxdeployment-showinstallationprogress {
+    top: calc(50% - 100px);
+}
+
+.xboxdeployment-xdkdeployment {
+    top: calc(50% - 200px);
+}
+
+input[type=radio],
+input.radio {
+  width: auto;
+  margin-left: 0px;
+}
+
+#xboxdeployment-deploynewapp-eraoption {
+    display: none;
+}
+
+#xboxdeployment-deploynewapp-uwpoption {
+    display: none;
+}
+
+.xboxdeployment-radiolabel {
+    display: inline-block;
+    user-select: none;
+    font-size: 20px;
+    padding-bottom: 4px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.xboxdeployment-radiolabel-checked {
+    display: inline-block;
+    user-select: none;
+    font-size: 20px;
+    padding-bottom: 4px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border-bottom-color:  rgb(16,124,16);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    cursor: pointer;
+}
+
+input[type=file],
+input.file {
+    width: 100%;
+}
+
+#xboxdeployment-deploynewapp-installlabel {
+    margin-left: 0px;
+}
+
+#xboxdeployment-deploynewapp-installlabel-era {
+    margin-left: 0px;
+}
+
+#xboxdeployment-deploynewapp-looselabel {
+    margin-left: 0px;
+}
+
+#xboxdeployment-deploynewapp-looselabel-era {
+    margin-left: 0px;
+}
+
+#xboxdeployment-deploynewapp-networklabel {
+    margin-left: 0px;
+}
+
+#xboxdeployment-deploynewapp-registerlabel {
+    margin-left: 0px;
+}
+
+#xboxdeployment-deploynewapp-registerpackagelabel {
+    margin-left: 0px;
+}
+
+.drag-drop {
+    display: none;
+    text-align: center;
+    padding: 1em 0;
+    margin: 1em 0;
+    border: 2px dashed;
+    cursor: default;
+}
+
+.drag-drop-hover {
+    text-align: center;
+    padding: 1em 0;
+    margin: 1em 0;
+    cursor: default;
+    color: rgb(16, 124, 16);
+    border-color: rgb(16, 124, 16);
+    border-style: solid;
+    box-shadow: inset 0 3px 4px #888;
+}
+
+#xboxdeployment-deploynewapp-advancedoptions {
+    display: none;
+}
+
+#xboxdeployment-deploynewapp-installpackage {
+    display: none;
+}
+
+#xboxdeployment-deploynewapp-showadvancedoptions-div {
+    float: right;
+}
+
+#xboxdeployment-deploynewapp-showadvancedoptions-header {
+    border-bottom: 1px solid;
+}
+
+#xboxdeployment-showinstallationprogress-statusbar {
+    width: 100%;
+    border-color: rgb(16, 124, 16);
+}
+
+#wdp-xbox-launcher-details-deploydriveselect {
+    width: 50%;
+}
+
+#wdp-xbox-launcher-details-deploydriveselect-statusbar {
+    border-color: rgb(16, 124, 16);
+    min-height: 25px;
+    width: 75%;
+}
+
+#wdp-xbox-launcher-details-deploydriveselect-cancel {
+    font-size: small;
+    min-width: 50px;
+}

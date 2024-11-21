@@ -1,0 +1,306 @@
+@font-face {
+    font-family: XboxWebManagementSymbols;
+    src: url(/fonts/XboxWebManagementFont.woff);
+}
+
+@font-face {
+    font-family: XboxDevToolAppsIcons;
+    src: url(/fonts/DevToolsFont.woff);
+}
+
+.wdp-body {
+    height: calc(100% - 68px);
+}
+
+/* Menu overrides */
+#wdp-menu-container {
+    background-color: rgb(58, 58, 58);
+}
+
+.wdp-menu ul,
+.wdp-active .wdp-menu-button,
+.wdp-active .wdp-powermenu-button {
+    background-color: rgb(58, 58, 58);
+}
+
+.wdp-menu a:link {
+    color: rgb(255, 255, 255);
+}
+
+#wdp-powermenu-restart {
+    color: rgb(255, 255, 255);
+}
+
+#wdp-powermenu-shutdown {
+    color: rgb(255, 255, 255);
+}
+
+.wdp-menu li:hover,
+.signin-signincommand:hover {
+    background-color: rgb(43, 43, 43);
+}
+
+.wdp-menu-button:hover,
+.wdp-header button:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+.wdp-menu li ul,
+.wdp-submenu.wdp-active,
+.wdp-submenu.wdp-active:hover,
+.wdp-submenu.wdp-active li:hover {
+    background-color: rgb(28, 28, 28);
+}
+
+.wdp-menu-workspaces .wdp-active {
+    background-color: rgb(43, 43, 43);
+}
+
+.wdp-menu ul.wdp-menu-fixedcommands {
+    background-color: rgb(47, 47, 47);
+}
+
+.wdp-header {
+    background-color: rgb(47, 47, 47);
+}
+
+#wdp-powermenu-container {
+    background-color: rgb(58, 58, 58);
+}
+
+/* Left navigation overrides */
+.wdp-nav {
+    width: 300px;
+    background-color: rgb(47, 47, 47);
+}
+
+.wdp-nav-workspaces {
+    height: calc(100% - 64px);
+}
+
+.wdp-menu-content {
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+#wdp-content-wrapper {
+    height: 100%;
+    width: calc(100% - 300px);
+}
+
+.wdp-nav-workspace:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+.wdp-nav-divider {
+    border-top: 2px solid rgb(24, 24, 24);
+}
+
+.wdp-nav-footer {
+    background-color: rgb(47, 47, 47);
+}
+
+.wdp-nav-footer a.wdp-nav-footer-link {
+    color: rgb(255, 255, 255);
+}
+
+.wdp-nav-workspace.wdp-active {
+    background-color: rgb(16, 124, 16);
+}
+
+/* Workspace overrides */
+[data-dock-node-type="3"] .dock-header.wdp-active .dock-header-title {
+    border-bottom-color: rgb(16, 124, 16);
+}
+
+/* Button overrides */
+button,
+.commonButton,
+button.btn-primary,
+.commonButton.btn-primary {
+    background-color: rgb(16, 124, 16);
+    color: rgb(255, 255, 255);
+}
+
+    button:hover,
+    .commonButton:hover,
+    .commonButton:focus,
+    button.btn-primary:hover,
+    .commonButton.btn-primary:hover,
+    button.btn-primary:focus,
+    .commonButton.btn-primary:focus {
+        background-color: rgb(13, 99, 13);
+        border-color: rgb(13, 99, 13);
+    }
+
+    button:active,
+    .commonButton:active {
+        background-color: rgb(16, 124, 16);
+    }
+
+    button[disabled],
+    .commonButton[disabled],
+    fieldset[disabled] button,
+    fieldset[disabled] .commonButton {
+        background-color: rgba(0, 0, 0, 0.2) !important;
+    }
+
+.btn-secondary {
+    background-color: rgb(58, 58, 58);
+}
+
+.darkButton {
+    background-color: #424242;
+    margin-bottom: 21px;
+    padding-top: 0px;
+    min-height: 0px;
+    padding-right: 15px;
+    line-height: 0px;
+    padding-left: 3px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.squareButton {
+    width: 30px;
+    min-width: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.resizingCenteredButton {
+    min-width: fit-content;
+    width: fit-content;
+    padding-left: 15px;
+}
+
+/* Hyperlink overrides */
+a,
+a:link,
+.link,
+a:visited {
+    color: rgb(16, 124, 16);
+}
+
+/* Checkbox overrides */
+input[type="checkbox"]:checked::-ms-check {
+    background-color: rgb(16, 124, 16);
+    border-color: rgb(16, 124, 16);
+}
+
+/* Overlay overrides */
+.wdp-dropdown {
+    border: 2px solid rgb(16, 124, 16);
+}
+
+/* Table overrides */
+.tableCell {
+    padding-top: 8px;
+}
+
+    .tableCell input {
+        margin-top: -4px;
+    }
+
+/* First run */
+.wdp-enhancedtooltip {
+    margin-top: 12px;
+    border: 3px solid rgb(0, 120, 215);
+}
+
+.wdp-overlay-arrowindicator {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 8px);
+    margin-top: -18px;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid rgb(0, 120, 215);
+}
+
+.slideDown {
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.29, 0.99);
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-64px);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+#wdp-statusbar {
+    display:inline-flex;
+    width:100%;
+}
+
+#wdp-statusbar-name {
+    min-width: 277px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    padding-left: 10px;
+    font-family: "Segoe UI";
+    line-height: 16px;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+}
+
+#wdp-statusbar-info {
+    min-width: calc(100% - 277px);
+    white-space: nowrap;
+    color: #FFFFFF;
+    display: inline-flex;
+    font-family: "Segoe UI";
+    line-height: 16px;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+}
+
+#wdp-statusbar-checkmark::before {
+    font-family: 'Segoe MDL2 Assets';
+    content: '\EC61';
+    padding-left: 10px;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+#wdp-statusbar-erroricon::before {
+    font-family: 'Segoe MDL2 Assets';
+    content: '\E871';
+    padding-left: 0px;
+    font-size: 23px;
+    color: #FFFFFF;
+    line-height: 10px
+}
+
+.wdp-statusbar-node {
+    box-sizing: border-box;
+    padding-left: 25px;
+}
+
+.wdp-statusbar-name-connected {
+    background: #167713;
+}
+
+.wdp-statusbar-info-connected {
+    background: #0C5D0B;
+}
+
+.wdp-statusbar-name-disconnected {
+    background: #808080;
+}
+
+.wdp-statusbar-info-disconnected {
+    background: #6D6D6D;
+}

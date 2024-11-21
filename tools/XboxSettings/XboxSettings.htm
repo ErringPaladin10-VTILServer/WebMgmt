@@ -1,0 +1,160 @@
+<link rel="Stylesheet" href="/tools/XboxSettingsCommon/XboxSettingsCommon.css" />
+<!-- Wrap this entire tool in a flex-container so WPF applications hosting it will
+    correctly show scrollbars. -->
+<div class="flex-container">
+    <div class="settings-category" data-containssettings="true" id="wdp-xbox-importsettingsdiv">
+        <input style="display:none" id="wdp-xbox-importsettingsfilepicker" type="file" />
+        <button id="wdp-xbox-importsettings">Import</button>
+        <button id="wdp-xbox-exportsettings">Export</button>
+        <div id="wdp-xbox-expandcategories" class="wdp-xbox-expandcollapsecategories">
+            <a tabindex="0" class="wdp-xbox-expandcategories-button" aria-label="expand all categories" role="button"></a>
+            <div class="wdp-xbox-expandcollapsecategories-label">Expand all</div>
+        </div>
+        <div id="wdp-xbox-collapsecategories" class="wdp-xbox-expandcollapsecategories" style="display:none;">
+            <a tabindex="0" class="wdp-xbox-collapsecategories-button" aria-label="collapse all categories" role="button"></a>
+            <div class="wdp-xbox-expandcollapsecategories-label">Collapse all</div>
+        </div>
+    </div>
+    <div class="settings-category" data-containssettings="true">
+        <div class="wdp-xbox-setting-header">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Device Information" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Device Information</div>
+        </div>
+        <div class="wdp-xbox-setting-external" id="XboxInformationSection"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Audio" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Audio</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="audio" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Debug" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Debug</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="debug" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Devkit Agent" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Devkit Agent</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="devkitagent" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Display" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Display</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="video" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Game Streaming" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Game Streaming</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="gamestreaming" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Legacy" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Legacy</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="legacy" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Localization" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Localization</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="localization" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show network" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Network</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="network" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Power" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Power</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="power" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Preference" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Preference</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="preferences" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Remote" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Remote</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="remote" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse"  aria-label="toggle show Storage" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Storage</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="storage" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show System Update" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">System Update</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="updates" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Unattended Scripts" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Unattended Scripts</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="unattended" style="display:none;"></div>
+    </div>
+    <div class="settings-category">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show User" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">User</div>
+        </div>
+        <div class="wdp-xbox-setting horizontal-group" data-wdp-xbox-setting-category="user" style="display:none;"></div>
+    </div>
+    <div class="settings-category" data-containssettings="true">
+        <div class="wdp-xbox-setting-header wdp-xbox-settings-minimized">
+            <a tabindex="0" class="wdp-xbox-settings-collapse" aria-label="toggle show Visual Studio" role="button"></a>
+            <hr class="wdp-xbox-settings-separator" />
+            <div class="wdp-xbox-setting-header-label">Visual Studio</div>
+        </div>
+        <div class="wdp-xbox-setting-external" id="xbox-vssettings-frame" style="display:none;">
+            <button id="xbox-vssettings-deleteall">Remove all Visual Studio pairings</button>
+        </div>
+    </div>
+</div>
+<script src="/tools/XboxSettingsCommon/XboxSettingsCommon.js"></script>
+<script src="/tools/XboxLiveSandbox/XboxLiveSandbox.js"></script>
+<script src="/tools/XboxDeviceInfo/XboxDeviceInfo.js"></script>
+<script src="/tools/XboxVsSettings/XboxVsSettings.js"></script>

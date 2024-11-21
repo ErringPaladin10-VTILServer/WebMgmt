@@ -1,0 +1,126 @@
+#frontPanelCanvas {
+    margin: 5px;
+    image-rendering: pixelated;
+}
+
+.smallFrontPanelButton {
+    border-radius: 50%;
+    width: 23px;
+    min-width: 23px;
+    background: white;
+    height: 23px;
+    min-height: 23px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border-color: #535353;
+    border-width: 4px;
+    padding: 0px;
+}
+
+.smallFrontPanelLabel {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    color: black;
+}
+
+#upButton {
+    margin-bottom: 10px;
+}
+
+#downButton {
+    margin-top: 10px;
+}
+
+#leftButton {
+    margin-right: 5px;
+}
+
+#rightButton {
+    margin-left: 5px;
+}
+
+.frontPanelArrowButton {
+    color: #CCCCCC;
+    margin: 0px;
+}
+
+    .frontPanelButton:hover {
+        color: white;
+    }
+
+#zoomButton {
+    padding: 0px;
+    border: 0px;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.flex-container {
+    overflow: auto;
+}
+
+.front-panel-bottom-container {
+    margin-top: 0px;
+    background-color: #424242;
+    width: 649px;
+    height: 145px;
+    z-index: 1;
+}
+
+.circle {
+    height: 16px;
+    width: 16px;
+    background-color: black;
+    vertical-align: top;
+    border-color: #CCCCCC;
+    border-width: 1px;
+    margin-top: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#remoteFrontPanelRoot {
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.front-panel-container {
+    background-color: white;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 0px;
+    width: 650px;
+    height: 210px;
+    z-index: 0;
+}
+
+input {
+    width: 100%;
+}
+
+input[type=radio],
+input.radio {
+    width: auto;
+    margin-left: 0px;
+}
+
+.frontPanelButton {
+    background: black;
+    color: #CCCCCC;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    min-width: 30px;
+    min-height: 30px;
+    font-size: 42px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-display: swap;
+    text-align: left;
+    font-weight: 500;
+}

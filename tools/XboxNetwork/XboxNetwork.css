@@ -1,0 +1,32 @@
+﻿.certificateFile-box {    
+    color: black;
+    outline: 1px;
+    outline-style: solid;
+    outline-color: black;
+    width: 500px;
+    margin-left: 2px;
+    margin-top: 6px;
+    padding-top: 5px;
+    min-width: 100px;
+    vertical-align: middle;
+    height: 30px;
+    display: inline-block;
+    background-color: rgb(242, 242, 242);
+}
+
+.darkInput-box {
+    color: black;
+    width: 500px;
+    margin-left: 2px;
+    height: 25px;
+    margin-bottom: 21px;
+    line-height: 35px;
+    min-width: 100px;
+    min-height: 10px;
+    display: inline-block;
+    background-color: rgb(242, 242, 242);
+}
+
+input[type="text"], textarea {
+    background-color : rgb(242, 242, 242); 
+}

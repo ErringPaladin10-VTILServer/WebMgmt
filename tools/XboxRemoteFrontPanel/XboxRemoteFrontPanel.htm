@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<script src="tools/XboxRemoteFrontPanel/XboxRemoteFrontPanel.js"></script>
+<link rel="Stylesheet" href="tools/XboxRemoteFrontPanel/XboxRemoteFrontPanel.css" />
+<div id="remoteFrontPanelRoot">
+    <br />
+    <div>
+        <div id="buttonBlock" class="front-panel-container">
+            <div>
+                <table style="margin-left:125px;display:inline-flex;">
+                    <tr>
+                        <th>
+                            <button class="smallFrontPanelButton" aria-label="Front panel button one" id="oneButton"></button>
+                        </th>
+                        <th>
+                            <button class="smallFrontPanelButton" aria-label="Front panel button two" id="twoButton"></button>
+                        </th>
+                        <th>
+                            <button class="smallFrontPanelButton" aria-label="Front panel button three" id="threeButton"></button>
+                        </th>
+                        <th>
+                            <button class="smallFrontPanelButton" aria-label="Front panel button four" id="fourButton"></button>
+                        </th>
+                        <th>
+                            <button class="smallFrontPanelButton" aria-label="Front panel button five" id="fiveButton"></button>
+                        </th>
+                        <th style="display:none;">
+                            <button class="smallFrontPanelButton" aria-label="Front panel switch button"  id="switchButton" title="switch mode"></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div>
+                                <div class="smallFrontPanelLabel">1</div>
+                            </div>
+                        </th>
+                        <th>
+                            <div>
+                                <div class="smallFrontPanelLabel">2</div>
+                            </div>
+                        </th>
+                        <th>
+                            <div>
+                                <div class="smallFrontPanelLabel">3</div>
+                            </div>
+                        </th>
+                        <th>
+                            <div>
+                                <div class="smallFrontPanelLabel">4</div>
+                            </div>
+                        </th>
+                        <th>
+                            <div>
+                                <div class="smallFrontPanelLabel">5</div>
+                            </div>
+                        </th>
+                        <th style="display:none;">
+                            <div>
+                                <div class="smallFrontPanelLabel">&#8631;</div>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+                <div class="front-panel-bottom-container" style="display:inline-flex;" sid="canvasDiv">
+                    <table>
+                        <tr>
+                            <th>
+                                <canvas id="frontPanelCanvas" />
+                            </th>
+                            <th>
+                                <button class="frontPanelButton" style="font-family: XboxDevToolAppsIcons;" aria-label="Front panel up button" id="upButton">&#x0026;</button>
+                                <br />
+                                <button class="frontPanelButton" style="font-family: XboxDevToolAppsIcons;" aria-label="Front panel left button" id="leftButton">&#x0024;</button>
+                                <button class="frontPanelButton" style="font-family: XboxDevToolAppsIcons;background: transparent;" id="selectButton" aria-label="Front panel select button"  title="Press to select, Hold 2s to swap System and Title views">&#x0059;</button>
+                                <button class="frontPanelButton" style="font-family: XboxDevToolAppsIcons;" aria-label="Front panel right button"  id="rightButton">&#x0025;</button>
+                                <br />
+                                <button class="frontPanelButton" style="font-family: XboxDevToolAppsIcons;" aria-label="Front panel down button" id="downButton">&#x0028;</button>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="frontPanelStatus" style="display:inline-flex;" class="hidden" />
+            </div>
+        </div>
+    </div>
+</div>

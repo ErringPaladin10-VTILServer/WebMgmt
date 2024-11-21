@@ -1,0 +1,53 @@
+﻿.xbltestaccounts-list {
+    margin-top: 32px;
+}
+
+.xbltestaccounts-userlist-togglesignedin {
+    margin-top: 0;
+}
+
+.xbltestaccounts-userlist-action {
+    margin-right: 8px;
+}
+
+.xbltestaccounts-details {
+    top: calc(50% - 150px);
+}
+
+.xbltestaccounts-adduser {
+    top: calc(50% - 130px);
+}
+
+.xbltestaccounts-createuser {
+    top: calc(50% - 200px);
+}
+
+.xbltestaccounts-inline {
+    max-width: 300px;
+    display: -webkit-inline-box;
+}
+
+.xbltestaccounts-inline-select {
+    display: inline-flex;
+    margin-bottom: 3px;
+}
+
+.create-user-label {
+    margin-top: 8px;
+    margin-right: 12px;
+    text-align: left;
+    min-width: 120px;
+}
+
+.create-user-select {
+    min-width: 300px;
+}
+
+.smaller-font {
+    font-size: small;
+}
+
+#xbltestaccounts-createuser-showpassword-button {
+    margin-left: 5px;
+    vertical-align: -webkit-baseline-middle;
+}

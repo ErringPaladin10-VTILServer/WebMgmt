@@ -1,0 +1,115 @@
+﻿.gridSpace {
+    height: calc(100% - 80px);
+}
+
+.httpSessionsGrid {
+    height: 100%;
+    width: calc(100% - 500px);
+    margin-top: 12px; 
+}
+
+.displayInlineBlock {
+   display:inline-block
+}
+
+.hideOnLoad {
+    display: none;
+}
+
+.httpMonitor-root {
+    height: 100%;
+}
+
+.httpMonitor-state {
+    height: 100%;
+}
+
+.httpMonitor-session-selection {
+    height: 100%;
+}
+
+#httpMonitor-session-selection-tabDisplay-headersOption {
+    display: none;
+}
+
+#httpMonitor-session-selection-tabDisplay-bodyOption {
+    display: none;
+}
+
+.httpMonitor-masterdetail {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; 
+    font-size: 13.5px;
+}
+
+.httpMonitor-detail {
+    position: relative;
+    width: 500px;
+}
+
+.httpMonitor-session-noSelection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.httpMonitor-detail input[type=radio] + label {
+    display: inline-block;
+    user-select: none;
+    font-size: 12px;
+    padding-bottom: 4px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: 16px;
+}
+
+.httpMonitor-detail input[type=radio]:checked + label {
+    border-bottom-color:  rgb(16,124,16);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.httpMonitor-session-selection-headers,
+.httpMonitor-session-selection-body {
+    padding: 0 16px;
+    overflow: auto;
+    height: 100%;
+}
+
+.httpMonitor-session-sectionheading {
+    font-size: 13.5px;
+    font-weight: 600;
+    background-color: rgb(242, 242, 242);
+    padding: 4px 8px;
+    margin: 8px 0;
+}
+
+.httpMonitor-session-field {
+    padding: 4px 8px;
+}
+
+.httpMonitor-session-field:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+    .httpMonitor-session-field:hover .httpMonitor-session-field-name,
+    .httpMonitor-session-field:hover .httpMonitor-session-field-value {
+        color: rgb(0, 0, 0);
+    }
+
+    .httpMonitor-session-field-name,
+    .httpMonitor-session-field-value {
+        margin: 0;
+    }
+
+.httpMonitor-session-field-name {
+    color: rgb(109, 109, 109);
+}
+
+.httpMonitor-session-field-value {
+    color: rgb(171, 108, 28);
+}

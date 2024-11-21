@@ -1,0 +1,58 @@
+<link rel="Stylesheet" href="tools/XboxUnattendedSetup/XboxUnattendedSetup.css" />
+<link rel="Stylesheet" href="tools/XboxRemoteFrontPanel/XboxRemoteFrontPanel.css" />
+<link rel="Stylesheet" href="tools/XboxSettingsCommon/XboxSettingsCommon.css" />
+
+<!-- Wrap this entire tool in a flex-container so WPF applications hosting it will
+    correctly show scrollbars. -->
+<div class="flex-container">
+    <div id="xboxunattendedsetup-mainpagediv">
+        <div>
+            <div>
+                <button id="xboxunattendedsetup-newscript" class="darkButton resizingCenteredButton">New script</button>
+                <button id="xboxunattendedsetup-import" class="darkButton resizingCenteredButton">Import</button>
+                <button id="xboxunattendedsetup-retrieve" disabled class="darkButton resizingCenteredButton">Load from console</button>
+                <!--TODO: Unhide when Dev Center hosts scripts (TFS 8407448)-->
+                <button id="xboxunattendedsetup-download" hidden class="darkButton resizingCenteredButton">Download from Dev Center</button>
+                <button id="xboxunattendedsetup-delete" disabled class="darkButton resizingCenteredButton">Delete stored script</button>
+                <input type="file" id="xboxunattendedsetup-importscript-input" style="display: none" accept=".xboxunattend" />
+            </div>
+            <div>
+                <label>Script name</label>
+                <br />
+                <input type="text" placeholder="Enter script name" id="xboxunattendedsetup-scriptname" />
+            </div>
+            <br />
+            <b>Add/edit script actions</b>
+            <br />
+            <button id="xboxunattendedsetup-newaction" class="darkButton resizingCenteredButton"><font size="4" style="align-self: visible;vertical-align: bottom;" text-stroke-width="thin">+</font> Action</button>
+            <br />
+            <div id="xboxunattendedsetup-actionlist" class="xboxunattendedsetup-list commonTable"></div>
+            <br />
+            <b>Apply script</b>
+            <br />
+            <div style="padding-top: 5px;">
+                <button id="xboxunattendedsetup-export" disabled class="darkButton resizingCenteredButton">Export</button>
+                <button id="xboxunattendedsetup-runscript" disabled class="darkButton resizingCenteredButton">Test</button>
+                <button id="xboxunattendedsetup-apply" disabled class="darkButton resizingCenteredButton">Apply as boot script</button>
+                <button id="xboxunattendedsetup-fpd-add" disabled hidden class="darkButton resizingCenteredButton">Add for front panel buttons</button>
+            </div>
+            <div style="font-weight: 700; margin-bottom:5px;">Select the <div style="display: inline;text-decoration: underline">Test</div> button at any time to try your script on this console.</div>
+            <div>
+                <textarea readonly id="xboxunattendedsetup-output" placeholder="The output from your script will show up here after you hit the Test button." />
+            </div>
+        </div>
+        <br />
+        <h3 tabindex="0" style="display: table;">System mappings for front panel buttons</h3>
+        <br />
+        <div id="xboxunattendedsetup-fpd-maindiv" class="column" style="display:inline-flex;" hidden>
+            <br />
+            <div id="xboxunattendedsetup-fpd-buttonmappings" />
+        </div>
+        <div id="remoteFrontPanelRoot" class="column">
+            <div class="remote-front-panel-element" />
+        </div>
+    </div>
+</div>
+
+<script src="tools/XboxSettingsCommon/XboxSettingsCommon.js"></script>
+<script src="tools/XboxUnattendedSetup/XboxUnattendedSetup.js"></script>

@@ -1,0 +1,11 @@
+﻿.wdp-performancegraph-nodata {
+    font-size: 18px;
+    color: rgb(196, 196, 196);
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 137px);
+}
+
+.wdp-performancegraph-label {
+    margin-bottom: 16px;
+}

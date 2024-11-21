@@ -1,0 +1,467 @@
+a, a:link, .link, a:visited {
+    color: white;
+}
+
+input:focus {
+    outline-color: #107C10 !important;
+    border-color: #107C10 !important;
+}
+
+select:focus {
+    outline-color: #107C10 !important;
+    border-color: #107C10 !important;
+    background-color: white;
+}
+
+button:focus {
+    outline-color: #107C10 !important;
+    border-color: #107C10 !important;
+}
+
+textarea:focus {
+    outline-color: #107C10 !important;
+    border-color: #107C10 !important;
+}
+
+.loadButton {
+    background: #535353;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    text-align: center;
+    height: 30px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    min-width: 70px;
+    padding-left: 12px !important;
+    padding-right: 15px !important;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-weight: 400;
+    margin-right: 6px;
+}
+
+    .loadButton:hover {
+        background: #cccccc;
+        border: #cccccc;
+    }
+
+    .loadButton:focus {
+        background: #F3F3F3;
+        border: #F3F3F3;
+        outline: #F3F3F3;
+        color: #107c10;
+    }
+
+    .loadButton[disabled] {
+        background: #535353 !important;
+        border: #535353 !important;
+        color: #b3b3b3 !important;
+    }
+
+textarea {
+    resize: none;
+}
+
+.XboxUnattendedSetupButtonGroup {
+    display: table;
+}
+
+.emptyTable-th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-left-style: hidden;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-right-color: rgb(224, 224, 224);
+    color: black;
+    font-weight: normal;
+    font-size: 11px;
+    padding-left: 8px;
+    text-align: left;
+    font-family: "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif;
+}
+
+.slick-header-column {
+    color: black;
+}
+
+.slick-row {
+    color: black;
+}
+
+.emptytable-body {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-left-style: hidden;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-right-style: hidden;
+    height: 20px;
+    padding-left: 8px;
+    color: black;
+    background-color: #EBEBEB;
+    font-size: 11px;
+    vertical-align: middle;
+    text-align: left;
+    font-family: "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif;
+}
+
+.buttonLabel {
+    background: grey;
+}
+
+.slick-header-column.ui-state-default {
+    padding-top: 4px;
+}
+
+.resizingCenteredButton {
+    min-width: fit-content;
+    width: fit-content;
+    margin-top: 0px;
+    font-weight: 400;
+    margin-right: 6px;
+}
+
+a, a:link, .link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.slick-row.even {
+    background-color: #EBEBEB;
+}
+
+.slick-row {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-left-style: hidden;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-right-style: hidden;
+    height: 20px;
+    color: #777777;
+    background-color: #EBEBEB;
+    font-size: 11px;
+    vertical-align: middle;
+    text-align: left;
+    font-family: "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif;
+}
+
+#xboxunattendedsetup-output {
+    border: solid 1px grey;
+    background: #F3F3F3;
+    width: 1140px;
+    min-height: 100px;
+    padding: 10px;
+}
+
+#xboxunattendedsetup-actionlist {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    max-width: 1140px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #CCCCCC;
+    width: 100%;
+}
+
+.xboxunattendedsetup-editaction {
+    top: calc(50% - 200px);
+}
+
+.xboxunattendedsetup-addnewaction {
+    overflow-x: hidden
+}
+
+#xboxunattendedsetup-addnewaction-xButton {
+    margin: 0px;
+    float: right;
+    width: 13px;
+    padding: 0px;
+    height: 17px;
+    min-width: 10px;
+    margin-right: 6px;
+    border: 0px;
+    background: transparent;
+}
+
+.xboxunattendedsetup-scriptactions-header {
+    background: #424242;
+    color: white;
+    margin-top: -20px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 0px;
+    margin-top: -16px;
+    margin-bottom: -3px
+}
+
+textarea {
+    width: 100%;
+    height: 50%;
+    padding: 8px;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#xboxunattendedsetup-newaction {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#xboxunattendedsetup-scriptname {
+    width: 498px;
+    margin-bottom: 20px;
+}
+
+#xboxunattendedsetup-addaction-lists {
+    display: flex;
+    height: inherit;
+}
+
+::placeholder {
+    color: #B3B3B3;
+}
+
+.wdp-unattend-categorytypes {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    top: 0px;
+    margin-top: 3px;
+    margin-bottom: -14px;
+    display: inline-block;
+    margin-left: -17px;
+    text-align: left;
+    list-style: none;
+    z-index: 1;
+    font-size: 15px;
+    background-color: #424242;
+    padding-top: 12px;
+    text-decoration: none;
+    padding-left: 0px;
+    height: auto;
+}
+
+.wdp-unattend-categorytype {
+    list-style: none;
+    background: #535353;
+    color: #FFFFFF;
+}
+
+    .wdp-unattend-categorytype a,
+    .wdp-actiontype a:link,
+    .wdp-actiontype a:visited {
+        display: inline-block;
+        padding: 12px 20px;
+        margin-left: 3px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .wdp-unattend-categorytype:hover a {
+        text-decoration: none;
+    }
+
+    .wdp-unattend-categorytype.wdp-active {
+        background-color: white;
+        color: #5DC21E;
+    }
+
+.wdp-active a {
+    color: #107C10;
+    margin-left: 3px;
+}
+
+#basicScrollbar {
+    overflow: scroll;
+    overflow-x: auto;
+    margin-top: 3px;
+    margin-right: 16px;
+}
+
+    #basicScrollbar::-webkit-scrollbar {
+        width: 16px;
+        background-color: #CCCCCC;
+        border: solid;
+        border-color: white;
+    }
+
+    #basicScrollbar::-webkit-scrollbar-track {
+        width: 16px;
+        background-color: white;
+        border: solid;
+        border-color: white;
+    }
+
+    #basicScrollbar::-webkit-scrollbar-thumb {
+        width: 16px;
+        background-color: #535353;
+    }
+
+.wdp-unattend-actiontypes {
+    top: 0px;
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+    z-index: 1;
+    font-size: 15px;
+    background-color: transparent;
+    text-decoration: none;
+    padding-left: 5px;
+    height: calc(100% - 100px);
+    width: 100%;
+}
+
+.wdp-unattend-actiontype {
+    list-style: none;
+    margin-left: -10px;
+}
+
+    .wdp-unattend-actiontype a,
+    .wdp-actiontype a:link,
+    .wdp-actiontype a:visited {
+        display: inline-block;
+        padding: 12px 10px;
+        text-align: left;
+        margin-left: 40px;
+        color: rgb(0, 0, 0);
+    }
+
+    .wdp-unattend-actiontype:hover a {
+        text-decoration: none;
+    }
+
+    .wdp-unattend-actiontype.wdp-active {
+        background-color: #107c10;
+    }
+
+        .wdp-unattend-actiontype.wdp-active a {
+            color: white;
+        }
+
+button[disabled] {
+    color: white !important;
+    background-color: #CCCCCC !important;
+}
+
+.xboxunattendedsetup-inline {
+    max-width: 300px;
+    display: -webkit-inline-box;
+}
+
+.create-user-label {
+    margin-top: 8px;
+    margin-right: 12px;
+    text-align: left;
+    min-width: 120px;
+}
+
+.xboxunattendedsetup-inline-select {
+    display: inline-flex;
+    margin-bottom: 3px;
+}
+
+.create-user-select {
+    min-width: 300px;
+}
+
+.smaller-font {
+    font-size: small;
+}
+
+#showpassword-button {
+    margin-left: 5px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.wdp-overlay {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    left: 10%;
+    right: 10%;
+    top: 15%;
+    bottom: 15%;
+    height: 70%;
+    width: 80%;
+    padding: 0px;
+    padding-top: 15px;
+    max-height: 700px;
+    max-width: 800px;
+}
+
+#xboxunattendedsetup-actionlist {
+    width: 1150px;
+}
+
+.form-group {
+    position: sticky;
+}
+
+.StretchDivHeight {
+    height: 100%;
+}
+
+.wdp-popup button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    text-align: center;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.wdp-popup > H4 {
+    margin-top: 2px;
+    margin-left: 22px;
+}
+
+.wdp-popup > p
+{
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.wdp-popup > button
+{
+    margin-left: 22px;
+}
+
+.grid-canvas {
+    width: -webkit-fill-available;
+}
+
+.xboxunattendedsetup-actionlist-remove {
+    vertical-align: super;
+}
+
+.xboxunattendedsetup-actionlist-divider {
+    font-size: 20px;
+    font-weight: 100;
+    vertical-align: super;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.xboxunattendedsetup-actionlist-moveup {
+    font-size: 23px;
+    vertical-align: super;
+}
+
+.xboxunattendedsetup-actionlist-movedown {
+    font-size: 23px;
+    vertical-align: super;
+}
+
+.xboxunattendedsetup-actionlist-delete {
+    font-size: 23px;
+    vertical-align: super;
+}
+
+.commonTable .slick-cell:last-child {
+    padding: 0px;
+    margin: 0px;
+    height: fit-content;
+}
