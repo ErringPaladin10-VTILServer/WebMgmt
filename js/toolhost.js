@@ -23,7 +23,7 @@
         name: "Crash dumps",
         uri: "/tools/CrashDumps/CrashDumps.htm"
     };
-    tools["{B04FED7B-8CA6-4906-B612-497492394E03}"] = {
+    tools["dbgs"] = {
         name: "Debug settings",
         uri: "/tools/XboxDebugSettings/XboxDebugSettings.htm"
     };
