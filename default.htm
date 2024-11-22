@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Windows Device Portal</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/spin.js"></script>
+    <script src="slickgrid/jquery.event.drag.js"></script>
+    <script src="slickgrid/slick.core.js"></script>
+    <script src="slickgrid/slick.grid.js"></script>
+    <script src="slickgrid/slick.dataview.js"></script>
+    <link rel="stylesheet" href="slickgrid/slick.grid.css" type="text/css" />
+    <link rel="Stylesheet" href="css/common.css" />
+    <link rel="Stylesheet" href="css/common-xbox.css" />
+    <script src="js/common-xbox.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/rest.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/workspace-definitions.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body id="root">
+    <div class="wdp-header">
+        <div id="wdp-menu"></div><span id="wdp-logo"><img id="wdp-logo-img" /></span> <!-- These elements need to be on the same line to prevent extra whitespace -->
+        <span id="wdp-titlelabel"></span>
+        <div class="wdp-secondarycommands">
+            <button id="webbHelp">Help</button>
+            <button id="feedback">Feedback</button>
+            <div id="wdp-powermenu"></div>
+        </div>
+    </div>
+    <div id="wdp-statusbar">
+        <div id="wdp-statusbar-checkmark" hidden></div>
+        <div id="wdp-statusbar-erroricon" hidden></div>
+        <div id="wdp-statusbar-name"></div>
+        <div id="wdp-statusbar-info"></div>
+    </div>
+    <div id="wdp-body" class="wdp-body">
+        <nav id="wdp-nav" class="wdp-nav"></nav>
+        <div id="wdp-content-wrapper">
+            <div id="wdp-banner" role="complementary"></div>
+            <div id="wdp-content"></div>
+        </div>
+    </div>
+</body>
+</html>
